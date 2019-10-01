@@ -1,0 +1,76 @@
+set timeout
+"imap
+  imap ｂｈ <ESC>
+  imap ｈｂ <ESC>
+  imap ｂｂｈ <ESC>
+  imap ｂｈｂ <ESC>
+  imap ｈｂｈ <ESC>
+  imap ｈｈｂ <ESC>
+  imap bh <ESC>
+  imap hb <ESC>
+  imap bbh b<ESC>
+  imap bhb b<ESC>
+  imap hbh h<ESC>
+  imap hhb h<ESC>
+  inoremap <ScrollWheelDown> <Nop>
+  inoremap <ScrollWheelUp> <Nop>
+"imapend
+"nmap
+  nnoremap <Space><CR> :<C-u>call append(expand('.'), '')<CR>
+  nnoremap mo O<Down><ESC>
+  nnoremap -- ;
+  nnoremap <C-w>.. 65<C-w>>
+  nnoremap <C-w>,, 65<C-w><
+  nnoremap .. <C-w>>
+  nnoremap ,, <C-w><
+  nnoremap za zA
+  nnoremap zA za
+  nnoremap zo zO
+  nnoremap zO zo
+  nnoremap ` ~
+  nnoremap ; :
+  nnoremap : ;
+  nnoremap j gj
+  nnoremap k gk
+  nnoremap p P
+  nnoremap P p
+  nnoremap <C-n> <C-w>
+  nnoremap x "_x
+  nnoremap X "_X
+  nnoremap い i
+  nnoremap う u
+  nnoremap え e
+  nnoremap お o
+  nnoremap O O
+  nnoremap ｊ j
+  nnoremap ｈ h
+  nnoremap ｋ k
+  nnoremap ｌ l
+  nnoremap ｗ w
+  nnoremap ｐ p
+  nnoremap っｙ yy
+  nnoremap っｄ dd
+  nnoremap I I
+  nnoremap ＄ $
+  nnoremap Y y$
+  nnoremap <silent> cip ciw<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
+  nnoremap <silent> cp ce<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
+"nmapend
+"cmap
+  cnoremap e3<CR> e#
+  cnoremap tn<CR> tabnew<Space>
+  cnoremap vc<CR> tabnew<Space>~/.vimrc<CR>
+  cnoremap <ESC> <ESC><ESC>
+  cnoremap hh<Space> %:h
+  cnoremap nerd<CR> NERDTree<CR>
+  cnoremap ;; %
+  cnoremap PIS PluginInstall
+"cmapend
+"vmap
+  vnoremap bh <ESC>
+  vnoremap hb <ESC>
+  vnoremap bbh b<ESC>
+  vnoremap bhb b<ESC>
+  vnoremap hbh h<ESC>
+  vnoremap hhb h<ESC>
+"vmapend"
